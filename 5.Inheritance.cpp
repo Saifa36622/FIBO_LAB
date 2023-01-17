@@ -28,7 +28,7 @@ class light :public knight //child
 
 int main()
 {
-    light son;s
+    light son;
     son.attack = 10;
     son.bonus_atk = 50;
     int total = son.attack * son.bonus_atk;
