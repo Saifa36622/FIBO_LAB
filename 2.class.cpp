@@ -1,10 +1,11 @@
 #include<iostream>
+using namespace std;
 
 class hello
 {
     public:
         int num;
-        std::string str;
+        string str;
 
 };
 
@@ -15,6 +16,6 @@ int main()
     hi.num = 55;
     hi.str = "hello world";
 
-    std::cout << hi.num << "\n" << hi.str << "\n" << std::endl;
-    std::cout << hi.num << "\n" << hi.str;
+    cout << hi.num << "\n" << hi.str << "\n" << endl;
+    cout << hi.num << "\n" << hi.str;
 }
