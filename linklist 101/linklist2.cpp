@@ -19,9 +19,9 @@ void printList(Nodewowzaa *node)
 void insert(Nodewowzaa **head,int new_data)
 {
     Nodewowzaa *new_one = new Nodewowzaa(); // creat new node by use Nodewowzaa class
-    Nodewowzaa *last = *head; // let the last link be the head
     new_one->data = new_data; // insert data to newnode call newone 
     new_one->next = NULL; // let the new one point to null
+    Nodewowzaa *last = *head; // let the last link be the head
     if (*head == NULL)
     {
         *head = new_one;
@@ -57,7 +57,7 @@ int main()
     printList(hi);
 
     cout << "\n";
-    
+
     change(&hi,8);
     printList(hi);
 
