@@ -10,11 +10,14 @@ class Nodewowzaa
     int data; 
     Nodewowzaa *next; 
 };
+
 class Linkedlist
 {
     Nodewowzaa *head;
     Nodewowzaa *tail;
     int size;
+    public :
+    void append(Nodewowzaa *new_one, int pos);
 };
 
 #endif
