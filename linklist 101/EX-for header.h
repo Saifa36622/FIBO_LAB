@@ -1,5 +1,5 @@
-#ifndef LINK-H
-#define LINK-H
+#ifndef LINK_H
+#define LINK_H
 
 #include <iostream>
 using namespace std;
