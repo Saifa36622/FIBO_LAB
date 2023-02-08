@@ -53,6 +53,7 @@ int main()
 
     Linkedlist.append(lol,0);
     Linkedlist.append(lol,1);
+    cout << "hi";
 
     
 

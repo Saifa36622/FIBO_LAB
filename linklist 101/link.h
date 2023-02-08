@@ -19,11 +19,11 @@ class Linkedlist
     public :
         void append(Nodewowzaa *new_one, int pos);
 };
-Linkedlist::Linkedlist()
-{
-    head = NULL;
-    tail = NULL;
-    size = 0;
-}
+// Linkedlist::Linkedlist()
+// {
+//     head = NULL;
+//     tail = NULL;
+//     size = 0;
+// }
 
 #endif
