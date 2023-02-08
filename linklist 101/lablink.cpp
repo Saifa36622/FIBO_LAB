@@ -40,6 +40,7 @@ void insert(Nodewowzaa **head,int new_data)
     return; 
 
 }
+
 int main()
 {
     // Nodewowzaa *hello = NULL;

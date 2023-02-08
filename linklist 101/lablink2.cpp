@@ -2,10 +2,10 @@
 
 void insert(Nodewowzaa **head,int new_data)
 {
-    Nodewowzaa *new_one = new Nodewowzaa(); 
-    new_one->data = new_data; 
+    Nodewowzaa *new_one = new Nodewowzaa();
+    new_one->data = new_data;
     new_one->next = NULL; 
-    Nodewowzaa *last = *head; 
+    Nodewowzaa *last = *head;
     if (*head == NULL)
     {
         *head = new_one;
@@ -20,6 +20,7 @@ void insert(Nodewowzaa **head,int new_data)
     return; 
 
 }
+
 void insert_with_position(Nodewowzaa **head,int new_data,int pos)
 {
     Nodewowzaa *new_one = new Nodewowzaa();
@@ -66,23 +67,39 @@ void printList(Nodewowzaa *node)
         node = node->next; 
     }
 }
+void del(Nodewowzaa **head,int pos)
+{
+    int len = 0;
+    Nodewowzaa *point = *head;
+    Nodewowzaa *point2 = NULL;
+    while (len < pos-1)
+    {
+        point = point->next;    
+        len++;
+    }
+    point2 = point->next;
+    point2 = point2->next;
+    point->next = point2;
+}
 
 int main()
 {
     Nodewowzaa *hi = NULL;
+    cout << "add 5 6 7 : ";
     insert(&hi,5);
     insert(&hi,6);
     insert(&hi,7);
     printList(hi);
-    cout << "\n";
+    cout << "\nadd 9 at 0 index : ";
     insert_with_position(&hi,9,0);
     printList(hi);
-    cout << "\n";
+    cout << "\nadd 3 at 2 index : ";
     insert_with_position(&hi,3,2);
     printList(hi);
-    cout << "\n";
+    cout << "\nadd 1 at 5 index : ";
     insert_with_position(&hi,1,5);
     printList(hi);
-    cout << "\n";
-
+    cout << "\ndelete the second index : ";
+    del(&hi,2);
+    printList(hi);
 }
