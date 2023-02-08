@@ -20,7 +20,7 @@ void insert(Nodewowzaa **head,int new_data)
     return; 
 
 }
-void insert2(Nodewowzaa **head,int new_data,int pos)
+void insert_with_position(Nodewowzaa **head,int new_data,int pos)
 {
     Nodewowzaa *new_one = new Nodewowzaa();
     new_one->data = new_data; 
@@ -75,13 +75,13 @@ int main()
     insert(&hi,7);
     printList(hi);
     cout << "\n";
-    insert2(&hi,9,0);
+    insert_with_position(&hi,9,0);
     printList(hi);
     cout << "\n";
-    insert2(&hi,3,2);
+    insert_with_position(&hi,3,2);
     printList(hi);
     cout << "\n";
-    insert2(&hi,1,5);
+    insert_with_position(&hi,1,5);
     printList(hi);
     cout << "\n";
 
