@@ -2,6 +2,7 @@
 
 void insert(Nodewowzaa **head,int new_data)
 {
+    int x = 10;
     Nodewowzaa *new_one = new Nodewowzaa();
     new_one->data = new_data;
     new_one->next = NULL; 
@@ -35,12 +36,6 @@ void insert_with_position(Nodewowzaa **head,int new_data,int pos)
          point = point->next;    
          len++;
         }
-        //  if (len >= pos+1)
-        // {
-        //     cout << "hi";
-        //     insert(head,new_data);
-        //     return;
-        // }
     }
     else if (pos == 0)
     {
