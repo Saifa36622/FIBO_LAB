@@ -119,7 +119,10 @@ int main()
     cout << x->getValue();
     cout << "\n\n";
     li.printList();
-    
+    hi node4 = hi(9,NULL);
+    li.insert(&node4,2);
+    cout << "\n";
+    li.printList();
 }
 
 // trash
