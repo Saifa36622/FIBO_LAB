@@ -21,6 +21,9 @@ int main()
         cout << last->value<<endl;
         last = last->next;
     }
+    cout << "\n";
+    wowzaa try1 = hi->getter();
+    try1.printList(&try1);
 
 
 }

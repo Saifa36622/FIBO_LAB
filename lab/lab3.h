@@ -37,6 +37,14 @@ class wowzaa
     {
         next = newNext;
     }
+    void printList(wowzaa *node) 
+    { 
+    while (node != NULL) 
+    { 
+        cout<< node->value << " "; 
+        node = node->next; 
+    }
+    }
 };
 
 
