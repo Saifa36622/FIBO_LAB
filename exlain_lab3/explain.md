@@ -32,7 +32,7 @@
 เช่น
 
 
-![code3](https://media.discordapp.net/attachments/784804366904590388/1073933050783744100/image.png)
+![code3](https://media.discordapp.net/attachments/784804366904590388/1073933763664425060/image.png)
 
 
 
@@ -54,4 +54,7 @@
 
  {
 
+โดยเมื่อเขียนเรียบร้อยหน้าตาจะประมาณนี้
+
+![code20](https://media.discordapp.net/attachments/784804366904590388/1073933990274273290/image.png)
 
