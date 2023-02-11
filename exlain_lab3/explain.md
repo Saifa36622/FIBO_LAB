@@ -197,7 +197,7 @@ the output:
 
  ![code](https://media.discordapp.net/attachments/784804366904590388/1074002102365462548/image.png?width=406&height=437)
 
- โดยเรามี class person ที่เราบอก ให้คอมพิวเตอร์รู้ว่า มี function ที่ชื่อว่า set_attack อยู่ใน class นี้แต่ยังไม่บอกว่า function นี้ทำอะไร
+ โดยเรามี class person ที่เราบอกให้คอมพิวเตอร์รู้ว่า มี function ที่ชื่อว่า set_attack อยู่ใน class นี้แต่ยังไม่บอกว่า function นี้ทำอะไร
 
 โดยเรามาบอกที่ file .cpp ทางด้านซ้ายตามรูปนี้
 
