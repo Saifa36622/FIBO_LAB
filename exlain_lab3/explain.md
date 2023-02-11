@@ -14,3 +14,7 @@
  จากรูปนี่คือโค้ดปกติที่มีการ include iostream และ using namespace std เอาไว้ โดยเราสามารถสร้าง header file ทำให้ไม่ต้องพิมทั้ง 2 ประโยคนี้ได้ โดยการ
 
  ![code2](https://media.discordapp.net/attachments/784804366904590388/1073929895996051467/image.png)
+
+ สร้าง file .h ขึ้นมา 1 file โดยต้องให้ file นี้อยู่ใน folder เดียวกับ file .cpp ที่เราต้องการ
+ 
+ #### ส่วนประกอบของ file .h
