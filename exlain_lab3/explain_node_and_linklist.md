@@ -52,3 +52,57 @@ linklisted และ node คืออะไร
 
 ![code](https://media.discordapp.net/attachments/784804366904590388/1074044392257618050/image.png?width=626&height=437)
 
+### การสร้าง function get และ set 
+
+ เพื่อเข้าไปปรับหรือแก้ไขข้อมูลที่เป็นข้อมูลแบบ private ใน class หรือ node นั้นๆ (อ้างอิงจาก basic_header_and_class)
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074045833055580360/image.png)
+ 
+ โดยเราก็สร้าง function ที่สามารถเข้าไปปรับเปลี่ยนหรือดึงค่าจากใน class เหมือนเดิม
+ โดยสิ่งที่ต้องเพิ่มเติมคือ เนื่องจาก ในnode หรือ ใน class ของเราไม่ได้มีตัวแปรแแค่ 1 ตัว แต่ยังมรตัวแปร next(ตัวแปรที่ใช้บอกว่า กล่องนี้ชี้ไปที่ไหน) อีก เราจึงต้องสร้าง funxtion สำหรับ เปลี่ยนค่าหรือรับค่า ตัวแปร next โดยอ้างอิงหลักการเดียวกับการ เปลี่ยนหรือรับค่า value เพียงแต่เปลี่ยนเป็นตัวแปร next  
+
+ ![code](https://media.discordapp.net/attachments/784804366904590388/1074046951475126373/image.png)
+
+ โดยที่ function get_next เราจะรับค่า เป็น node เราจึงประกาศว่า hi hi::get_next 
+
+ โดยต่อมาจะเป็นหน้าตาของ code โดยรวม
+
+ wowzaa.h
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074047612191260783/image.png?width=344&height=437)
+
+hi.cpp
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074047836552970290/image.png?width=348&height=437)
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074047882061152376/image.png)
+
+โดยในส่วนต่อไปจะเป็นการสั่งใช้งาน หรือ main
+
+หน้าตาของ code main โดยรวม
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074048361553997895/image.png?width=712&height=437)
+
+โดย 2 บรรทัดแรกเป็นเสมือนการสร้างกล่องขึ้นมา 2 ใบ ชื่อว่า wow และ zaa ตามที่เคยได้อธิบายไปดังรูป
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074044392257618050/image.png?width=626&height=437)
+
+จากนั้น อีก 2 บรรทัดต่อมา คือ 
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074048768195960977/image.png)
+
+หมายความว่าเราได้ set ค่ากล่อง wow และ กล่อง zaa ใหม่ ดังรูป
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074049208547561572/image.png?width=618&height=437)
+
+จากนั้นเราก็ได้ทำการ getvalue หรือ ดีงค่าของ wowมาเก็บที่ตัวแปร x และ ค่าของ zaa มาเก็บไว้ที่ตัวแแปร y
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074049580620070912/image.png)
+
+และ บรรทัดนี้คือ การ print ค่า x และ y ออกมา ดังภาพ
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074049897159991306/image.png)
+
+the output:
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074049937223995544/image.png)
