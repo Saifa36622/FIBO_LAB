@@ -106,3 +106,31 @@ hi.cpp
 the output:
 
 ![code](https://media.discordapp.net/attachments/784804366904590388/1074049937223995544/image.png)
+
+โดยต่อมา บรรทัดนี้
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074050591627681812/image.png)
+
+เป็นการบ่งบอกว่า ให้กล่อง wow นั้นชี้ไปที่ที่อยู่ของกล่อง zaa หรือ ชี้ไปที่กล่อง zaa นั้นเอง
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074050977319096411/image.png?width=571&height=437)
+
+และจากนั้นคือ การพิสูจน์ว่า function ของเรานั้นใช้ได้ไหมโดยการสร้างกล่องอีกใบมาเก็บข้อมูล ของกล่องที่อยู่ต่อจาก กล่อง wowเอาไว้ 
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074051450981843144/image.png)
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074051760739581972/image.png?width=677&height=437)
+
+จากนั้น(ลืมอธิบาย function print)
+
+function print 
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074052031817453680/image.png)
+
+คือ การprint เอาค่า value ใน node นั้นๆ ออกมา
+
+จากนั้น เราจึงสั่ง print temp ออกมา 
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074052420033859725/image.png)
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074052553723088896/image.png)
