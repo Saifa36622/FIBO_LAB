@@ -190,7 +190,25 @@ the output:
 ### ประกาศแบบที่ ta ต้องการ
 
 คือ การที่เราเอา function เหล่านั้นมาประกาศว่าให้มันทำอะไรนอก class นั้นๆ แต่ยังต้องมีการประกาศเอาไว้ว่าใน class นั้นๆ มี function นั้นๆ อยู่ ดังนี้
- 
+
+ ![code](https://media.discordapp.net/attachments/784804366904590388/1074001843505598634/image.png?width=960&height=406)
+
+ โดยเริ่มจากรูปทางด้านขวา
+
+ ![code](https://media.discordapp.net/attachments/784804366904590388/1074002102365462548/image.png?width=406&height=437)
+
+ โดยเรามี class person ที่เราบอก ให้คอมพิวเตอร์รู้ว่า มี function ที่ชื่อว่า set_attack อยู่ใน class นี้แต่ยังไม่บอกว่า function นี้ทำอะไร
+
+โดยเรามาบอกที่ file .cpp ทางด้านซ้ายตามรูปนี้
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074002620957601802/image.png?width=567&height=437)
+
+เราบอกคอมพิวเตอร์ว่าให้ไปหา function ที่ชื่อว่า set_attack ที่อยู่ใน class person และ บอกว่า ให้ function นั้นๆทำอะไร
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074003445717147728/image.png)
+
+(ประโยคที่ เขียนว่า person::set_attack หมายความว่า ไปหา
+function ที่ชื่อว่า set_attack ที่อยู่ใน class person ที่เราเขียนเอาไว้)
 
 
 
