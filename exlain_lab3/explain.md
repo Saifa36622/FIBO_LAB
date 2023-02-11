@@ -73,3 +73,15 @@
 เข้าไปที่ file .cpp ทางด้านขวา เราก็จะสามารถเรียกใช้ function ที่มีชื่อว่า yoloo ได้
 
 ## class 
+
+class เปรียบเสมือนถ้าเราจะสร้าง template ตัวละคร โดยสามารถสร้าง class ไว้ที่ file .h หรือ .cpp ก็ได้ เช่น 
+
+![codewowzaa](https://media.discordapp.net/attachments/784804366904590388/1073978746664656936/image.png)
+
+จากในรูปนี้เราได้ทำการสร้าง class ที่ชื่อว่า person ขึ้นมา และ ประกาศให้ใน person มีค่าตัวเลข attack และ heatlh โดยประกาศไว้แบบ public (เรื่อง public private เดี่ยวค่อยอธิบาย) 
+
+โดยเราสามารถ นำเอา class person นี้ไปสร้างตัวละครและตั้งชื่อให้กับตัวละครนั้นๆได้ เช่น 
+
+![code4545](https://media.discordapp.net/attachments/784804366904590388/1073979528755564574/image.png)
+
+จากรูปจะเสมือนว่าเราได้สร้างตัวละคร ชื่อว่า chokun โดยใน ตัวละคร chokun จะยังไม่
