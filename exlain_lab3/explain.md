@@ -30,8 +30,8 @@
 2. #define ~~~~ หรือ ก็คือ define มันขึ้นมา
 
 เช่น 
- #ifndef WOWZAA_H
- #define WOWZAA_H
+#ifndef WOWZAA_H
+#define WOWZAA_H
 
  โดยทั่วไปจะ define ตามชื่อ file เพื่อป้องกันการสับสน
 
