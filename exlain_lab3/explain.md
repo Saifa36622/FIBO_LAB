@@ -29,9 +29,10 @@
 
 2. #define ~~~~ หรือ ก็คือ define มันขึ้นมา
 
-เช่น 
-#ifndef WOWZAA_H
-#define WOWZAA_H
+เช่น
+  ![code3](https://media.discordapp.net/attachments/784804366904590388/1073933050783744100/image.png)
+
+
 
  โดยทั่วไปจะ define ตามชื่อ file เพื่อป้องกันการสับสน
 
