@@ -58,3 +58,12 @@
 
 ![code20](https://media.discordapp.net/attachments/784804366904590388/1073933990274273290/image.png)
 
+โดย เมื่อเราสร้าง file .h เรียบร้อยแล้ว เราก็จะสามารถ include หรือ ทำให้ file ที่เราต้องการเขียนรู้จัก file .h ที่เราเขียนได้โดยการ เขียน include "ชื่อ file .h ของเรา" กำกับเอาไว้ ดังรูป
+
+![code65](https://media.discordapp.net/attachments/784804366904590388/1073935347844661248/image.png)
+
+โดยเราสามารถนำมาพลิกแพลงได้ เช่น สร้าง function เข้า ยกตัวอย่างเช่น 
+
+![code200](https://media.discordapp.net/attachments/784804366904590388/1073934615154278431/image.png)
+
+จากรูปภาพ จะสังเกตได้ว่า code ทางซ้าย หรือ hi.h ได้มีการ สร้าง function ชื่อว่า yoloo และหากเรา include "hi.h"
