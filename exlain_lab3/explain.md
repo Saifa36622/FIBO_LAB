@@ -70,4 +70,4 @@
 ![code200](https://media.discordapp.net/attachments/784804366904590388/1073934615154278431/image.png)
 
 จากรูปภาพ จะสังเกตได้ว่า code ทางซ้าย หรือ hi.h ได้มีการ สร้าง function ชื่อว่า yoloo และหากเรา include "hi.h"
-555
+เข้าไปที่ file .cpp ทางด้านขวา เราก็จะสามารถเรียกใช้ function ที่มีชื่อว่า yoloo ได้
