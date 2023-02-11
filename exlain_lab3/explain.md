@@ -210,6 +210,13 @@ the output:
 (ประโยคที่ เขียนว่า person::set_attack หมายความว่า ไปหา
 function ที่ชื่อว่า set_attack ที่อยู่ใน class person ที่เราเขียนเอาไว้)
 
+โดยเมื่อเสร็จแล้วจะหน้าตาประมาณนี้
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074007195328467014/image.png?width=960&height=372)
+
+ซึ้งทำงานได้ไม่ต่างกับ code นี้
+
+![code](https://media.discordapp.net/attachments/784804366904590388/1074007533779423312/image.png?width=926&height=437)
 
 
 
