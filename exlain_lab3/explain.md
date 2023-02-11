@@ -65,7 +65,7 @@
 
 ![code65](https://media.discordapp.net/attachments/784804366904590388/1073935347844661248/image.png)
 
-โดยเราสามารถนำมาพลิกแพลงได้ เช่น สร้าง function เข้า ยกตัวอย่างเช่น 
+โดยเราสามารถนำมาพลิกแพลงได้ เช่น สร้าง function ใน file .h และนำมาเรียกใช้งานที่ file ที่เราต้องการ ยกตัวอย่างเช่น 
 
 ![code200](https://media.discordapp.net/attachments/784804366904590388/1073934615154278431/image.png)
 
