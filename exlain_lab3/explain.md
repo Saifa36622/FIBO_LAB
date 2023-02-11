@@ -12,3 +12,5 @@
  ![code](https://media.discordapp.net/attachments/784804366904590388/1073928128910598154/image.png)
 
  จากรูปนี่คือโค้ดปกติที่มีการ include iostream และ using namespace std เอาไว้ โดยเราสามารถสร้าง header file ทำให้ไม่ต้องพิมทั้ง 2 ประโยคนี้ได้ โดยการ
+
+ ![code2](https://media.discordapp.net/attachments/784804366904590388/1073929895996051467/image.png)
