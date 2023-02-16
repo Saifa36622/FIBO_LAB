@@ -26,12 +26,18 @@ void link::insert(hi *newnode, int pos)
         cout << "Error" << endl;
         return;
     }
-    if (pos == 0)
+    if (pos == 0 && head != NULL)
     {
         newnode->set_next(head);
         newnode->setprev(NULL);
         head->setprev(newnode);
         head = newnode;
+    }
+    else if (pos == 0 && head == NULL)
+    {
+        head = newnode;
+        head->setprev(NULL);
+        head->set_next(tail);
     }
     else if (pos == size)
     {
@@ -57,6 +63,7 @@ void link::insert(hi *newnode, int pos)
         current->setprev(newnode);
     }
     size++;
+    return;
 }
 void link::printList() 
 { 

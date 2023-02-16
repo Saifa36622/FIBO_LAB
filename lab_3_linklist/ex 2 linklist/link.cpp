@@ -24,7 +24,12 @@ void link::insert(hi *newnode, int pos)
         cout << "Error" << endl;
         return;
     }
-    if (pos == 0)
+    if (pos == 0 && head != NULL)
+    {
+        newnode->set_next(head);
+        head = newnode;
+    }
+    else if (pos == 0 && head == NULL)
     {
         newnode->set_next(head);
         head = newnode;
@@ -123,6 +128,12 @@ int main()
     li.insert(&node4,2);
     cout << "\n";
     li.printList();
+
+    link test;
+    test.insert(&node1,0);
+    test.insert(&node2,1);
+    cout << "\n";
+    test.printList();
 }
 
 // trash
