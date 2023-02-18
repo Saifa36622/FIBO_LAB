@@ -66,15 +66,6 @@ void link::insert(Node *newnode, int pos)
     size++;
     return;
 }
-void link::printList() 
-{ 
-    Node *point = head;
-    while (point != NULL)
-    {
-        cout << point->getValue() << endl;
-        point = point->get_next();
-    }
-}
 Node *link::remove(int pos)
 {
     if (pos >= size || pos < 0)
@@ -119,7 +110,15 @@ Node *link::remove(int pos)
     size--;
     return removedNode;
 }
-
+void link::printList() 
+{ 
+    Node *point = head;
+    while (point != NULL)
+    {
+        cout << point->getValue() << endl;
+        point = point->get_next();
+    }
+}
 int main()
 {
     Node node1 = Node(3,NULL,NULL);
