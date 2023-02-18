@@ -3,33 +3,33 @@
 
 #include <iostream>
 using namespace std;
-class hi
+class Node
 {
 	private:
 		int value;
-		hi *next;
+		Node *next;
 	public:
-		hi();
-		hi(int newValue, hi *newNext);
+		Node();
+		Node(int newValue, Node *newNext);
 		void print();
 		void setValue(int newValue);
 		int getValue();
-        hi *get_next();
-        void set_next(hi *new_next);
+        Node *get_next();
+        void set_next(Node *new_next);
 
 }; 
 class link
 {
     private :
-        hi *head;
-        hi *tail;
+        Node *head;
+        Node *tail;
         int size;
     public :
         link();
-        link(hi *newnode1,hi *newnode2, int size);
-        void insert(hi *newnode,int pos);
+        link(Node *newnode1,Node *newnode2, int size);
+        void insert(Node *newnode,int pos);
         void printList();
-        hi *remove(int pos);
+        Node *remove(int pos);
         
 };
 

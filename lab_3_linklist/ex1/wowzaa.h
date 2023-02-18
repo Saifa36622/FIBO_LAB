@@ -4,19 +4,19 @@
 #include <iostream>
 using namespace std;
 
-class hi
+class Node
 {
 	private:
 		int value;
-		hi *next;
+		Node *next;
 	public:
-		hi();
-		hi(int newValue, hi *newNext);
+		Node();
+		Node(int newValue, Node *newNext);
 		void print();
 		void setValue(int newValue);
 		int getValue();
-        hi get_next();
-        void set_next(hi *new_next);
+        Node get_next();
+        void set_next(Node *new_next);
 
 }; 
 #endif

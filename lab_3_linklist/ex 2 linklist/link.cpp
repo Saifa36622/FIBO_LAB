@@ -8,7 +8,7 @@ link::link()
     size = 0;
     
 }
-link::link(hi *newnode1,hi *newnode2, int newsize)
+link::link(Node *newnode1,Node *newnode2, int newsize)
 {
     head = newnode1;
     tail = newnode2;
@@ -17,7 +17,7 @@ link::link(hi *newnode1,hi *newnode2, int newsize)
     tail->set_next(NULL);
 }
 
-void link::insert(hi *newnode, int pos)
+void link::insert(Node *newnode, int pos)
 {
     if (pos > size || pos < 0)
     {
@@ -36,15 +36,15 @@ void link::insert(hi *newnode, int pos)
     }
     else
     {
-        hi *current = head;
-        hi *previous = NULL;
+        Node *current = head;
+        Node *previous = NULL;
         // for (int i = 0; i < pos; i++)
         // {
         //     previous = current;
         //     current = current->get_next();
         // }
         int len = 0;
-        while (len < pos)
+        while(len < pos)
         {
             previous = current;
             current = current->get_next();
@@ -56,18 +56,20 @@ void link::insert(hi *newnode, int pos)
     }
     size++;
 }
-hi *link::remove(int pos)
+Node *link::remove(int pos)
 {
     if (pos >= size || pos < 0)
     {
         cout << "Error" << endl;
         return NULL;
     }
-    hi *current = head;
+    Node *current = head;
     if (pos == 0)
     {
-        hi *removenode = new hi(head->getValue(), head->get_next());
+        Node *removenode = new Node(head->getValue(), head->get_next());
+        Node *temp20 = head;
         head = head->get_next();
+        temp20->set_next(NULL);
         size--;
         if (size == 0)
         {
@@ -78,7 +80,7 @@ hi *link::remove(int pos)
     else
     {
         int len = 0;
-        while (len < pos -1)
+        while(len < pos - 1)
         {
             current = current->get_next();
             len++;
@@ -87,8 +89,12 @@ hi *link::remove(int pos)
         // {
         //     current = current->get_next();
         // }
-        hi *removenode = new hi(current->get_next()->getValue(), current->get_next()->get_next());
+        Node *removenode = new Node(current->get_next()->getValue(), current->get_next()->get_next());
+        Node *current3 = current->get_next();
+        // Node *current2 = current;
+        // current->set_next(NULL);
         current->set_next(current->get_next()->get_next());
+        current3->set_next(NULL);
         size--;
         if (pos == size)
         {
@@ -100,44 +106,50 @@ hi *link::remove(int pos)
 
 void link::printList() 
 { 
-    hi *point = head;
+    Node *point = head;
     while (point != NULL)
     {
         cout << point->getValue() << endl;
-        // hi tp = *(point->get_next());
+        // Node tp = *(point->get_next());
         // point = &tp;
         point = point->get_next();
     }
 }
 int main()
 {
-    hi node1 = hi(3,NULL);
-    hi node2 = hi(5,NULL);
+    Node node1 = Node(3,NULL);
+    Node node2 = Node(5,NULL);
     link li(&node1,&node2,2);
-    hi node3 = hi(7,NULL);
+    Node node3 = Node(7,NULL);
+    cout << "1.should be 3 5 : \n\n";
     li.printList();
     cout << "\n";
     li.insert(&node3,2);
+    cout << "2.should be 3 5 7: \n\n";
     li.printList();
     cout << "\n";
-    hi *x  = li.remove(1);
+    Node *x  = li.remove(1);
+    cout << "3.should be 5 : \n\n";
     cout << x->getValue();
     cout << "\n\n";
+    cout << "4.should be 3 7 : \n\n";
     li.printList();
-    hi node4 = hi(9,NULL);
+    Node node4 = Node(9,NULL);
     li.insert(&node4,2);
     cout << "\n";
+    cout << "5.should be 3 7 9 : \n\n";
     li.printList();
 
     link test;
     test.insert(&node1,0);
     test.insert(&node2,1);
     cout << "\n";
+    cout << "6.should be 3 5 : \n\n";
     test.printList();
 }
 
 // trash
-// void link::insert(hi *newnode, int pos)
+// void link::insert(Node *newnode, int pos)
 // {
 //     if (pos > size || pos < 0)
 //     {
@@ -151,14 +163,14 @@ int main()
 //     }
 //     else
 //     {
-//         hi *current = head;
+//         Node *current = head;
 //         for (int i = 0; i < pos - 1; i++)
 //         {
-//             hi tp = *(current->get_next());
+//             Node tp = *(current->get_next());
 //             current = &tp;
 //         }
         
-//         hi tp2 = *(current->get_next());
+//         Node tp2 = *(current->get_next());
 //         if (current->get_next() == nullptr)
 //         {
 //             current->set_next(newnode);
@@ -166,7 +178,7 @@ int main()
 //         }
 //         newnode->set_next(&tp2);
 //         current->set_next(newnode);
-//         // hi *tmp = &tp2;
+//         // Node *tmp = &tp2;
 //         // if (tmp == NULL)
 //         // {
 //         //     current->set_next(newnode);

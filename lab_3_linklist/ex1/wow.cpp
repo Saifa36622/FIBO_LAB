@@ -1,38 +1,38 @@
 #include "wowzaa.h"
 
-hi::hi(){
+Node::Node(){
 	value = 0;
 	next = NULL;
 }
-hi::hi(int newValue, hi *newNext){
+Node::Node(int newValue, Node *newNext){
 	value = newValue;
 	next = newNext;
 }
-void hi::print()
+void Node::print()
 {
     cout << "value = " << value << endl;
 }
-int hi::getValue()
+int Node::getValue()
 {
     return value;
 }
-void hi::setValue(int newValue)
+void Node::setValue(int newValue)
 {
     value = newValue;
 }
-hi hi::get_next()
+Node Node::get_next()
 {
     return *next;
 }
-void hi::set_next(hi *new_next)
+void Node::set_next(Node *new_next)
 {
     next = new_next;
 }
 
 int main()
 {
-    hi wow = hi();
-    hi zaa = hi(5,NULL);
+    Node wow = Node();
+    Node zaa = Node(5,NULL);
     
     wow.setValue(10);
     zaa.setValue(20);
@@ -42,7 +42,7 @@ int main()
 
     cout << "\nand value of the next node for wow is ";
     wow.set_next(&zaa);
-    hi temp = wow.get_next(); 
+    Node temp = wow.get_next(); 
     temp.print();
 
 }

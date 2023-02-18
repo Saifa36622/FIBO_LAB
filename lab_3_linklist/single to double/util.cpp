@@ -1,41 +1,41 @@
 #include "link.h"
 
-hi::hi(){
+Node::Node(){
 	value = 0;
 	next = NULL;
     prev = NULL; // here
 }
-hi::hi(int newValue, hi *newNext,hi *newprev){
+Node::Node(int newValue, Node *newNext,Node *newprev){
 	value = newValue;
 	next = newNext;
     prev = newprev;
 }
-void hi::print()
+void Node::print()
 {
     cout << "value = " << value << endl;
 }
-int hi::getValue()
+int Node::getValue()
 {
     return value;
 }
-void hi::setValue(int newValue)
+void Node::setValue(int newValue)
 {
     value = newValue;
 }
-hi *hi::get_next()
+Node *Node::get_next()
 {
     return next;
 }
-void hi::set_next(hi *new_next)
+void Node::set_next(Node *new_next)
 {
     next = new_next;
 }
 // here
-hi *hi::getprev()
+Node *Node::getprev()
 {
     return prev;
 }
-void hi::setprev(hi *newprev)
+void Node::setprev(Node *newprev)
 {
     prev = newprev;
 }

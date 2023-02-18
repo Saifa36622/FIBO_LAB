@@ -8,7 +8,7 @@ link::link()
     size = 0;
     
 }
-link::link(hi *newnode1,hi *newnode2, int newsize)
+link::link(Node *newnode1,Node *newnode2, int newsize)
 {
     head = newnode1;
     tail = newnode2;
@@ -19,7 +19,7 @@ link::link(hi *newnode1,hi *newnode2, int newsize)
     tail->setprev(head);
 }
 
-void link::insert(hi *newnode, int pos)
+void link::insert(Node *newnode, int pos)
 {
     if (pos > size || pos < 0)
     {
@@ -36,8 +36,9 @@ void link::insert(hi *newnode, int pos)
     else if (pos == 0 && head == NULL)
     {
         head = newnode;
+        tail = newnode;
         head->setprev(NULL);
-        head->set_next(tail);
+        head->set_next(NULL);
     }
     else if (pos == size)
     {
@@ -48,8 +49,8 @@ void link::insert(hi *newnode, int pos)
     }
     else
     {
-        hi *current = head;
-        hi *previous = NULL;
+        Node *current = head;
+        Node *previous = NULL;
         int len = 0;
         while (len < pos)
         {
@@ -67,26 +68,82 @@ void link::insert(hi *newnode, int pos)
 }
 void link::printList() 
 { 
-    hi *point = head;
+    Node *point = head;
     while (point != NULL)
     {
         cout << point->getValue() << endl;
         point = point->get_next();
     }
 }
+Node *link::remove(int pos)
+{
+    if (pos >= size || pos < 0)
+    {
+        cout << "Error" << endl;
+        return NULL;
+    }
+    
+    Node *removedNode = NULL;
+    
+    if (pos == 0 && head != NULL)
+    {
+        removedNode = head;
+        head = head->get_next();
+        head->setprev(NULL);
+        removedNode->set_next(NULL);
+    }
+    else if (pos == size - 1)
+    {
+        removedNode = tail;
+        tail = tail->getprev();
+        tail->set_next(NULL);
+        removedNode->setprev(NULL);
+    }
+    else
+    {
+        Node *current = head;
+        Node *previous = NULL;
+        int len = 0;
+        while (len < pos)
+        {
+            previous = current;
+            current = current->get_next();
+            len++;
+        }
+        removedNode = current;
+        previous->set_next(current->get_next());
+        current->get_next()->setprev(previous);
+        removedNode->set_next(NULL);
+        removedNode->setprev(NULL);
+    }
+    size--;
+    return removedNode;
+}
+
 int main()
 {
-    hi node1 = hi(3,NULL,NULL);
-    hi node2 = hi(5,NULL,NULL);
+    Node node1 = Node(3,NULL,NULL);
+    Node node2 = Node(5,NULL,NULL);
     link li(&node1,&node2,2);
-    hi node3 = hi(7,NULL,NULL);
+    Node node3 = Node(7,NULL,NULL);
     li.printList();
     cout << "\n";
     li.insert(&node3,0);
     li.printList();
     cout << "\n";
-    hi node4 = hi(9,NULL,NULL);
+    Node node4 = Node(9,NULL,NULL);
     li.insert(&node4,3);
     cout << "\n";
     li.printList();
+    li.remove(1);
+    cout << "\n";
+    li.printList();
+    
+    link li2;
+    li2.insert(&node1,0);
+    cout << "\n";
+    li2.printList();
+    li2.insert(&node2,1);
+    cout << "\n";
+    li2.printList();
 }
