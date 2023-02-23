@@ -20,9 +20,9 @@ void Node::setValue(int newValue)
 {
     value = newValue;
 }
-Node Node::get_next()
+Node *Node::get_next()
 {
-    return *next;
+    return next;
 }
 void Node::set_next(Node *new_next)
 {
@@ -33,18 +33,20 @@ int main()
 {
     Node wow = Node();
     Node zaa = Node(5,NULL);
+    Node n1 = Node(10,&zaa);
     
-    wow.setValue(10);
-    zaa.setValue(20);
-    int x = wow.getValue();
-    int y = zaa.getValue();
-    cout << "value of wow = " << x << " and value of zaa = " << y;
+    // wow.setValue(10);
+    // zaa.setValue(20);
+    // int x = wow.getValue();
+    // int y = zaa.getValue();
+    // cout << "value of wow = " << x << " and value of zaa = " << y;
 
-    cout << "\nand value of the next node for wow is ";
-    wow.set_next(&zaa);
-    Node temp = wow.get_next(); 
-    temp.print();
+    // cout << "\nand value of the next node for wow is ";
+    // wow.set_next(&zaa);
+    // Node temp = wow.get_next(); 
+    // temp.print();
 
+    cout << n1.get_next() << " and " << &zaa;
 }
 
 

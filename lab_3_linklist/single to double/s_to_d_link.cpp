@@ -68,7 +68,11 @@ void link::insert(Node *newnode, int pos)
 }
 Node *link::remove(int pos)
 {
-    if (pos >= size || pos < 0)
+    if (pos < 0)
+    {
+        pos = size + pos;
+    }
+    if (pos >= size )
     {
         cout << "Error" << endl;
         return NULL;
@@ -121,28 +125,50 @@ void link::printList()
 }
 int main()
 {
-    Node node1 = Node(3,NULL,NULL);
-    Node node2 = Node(5,NULL,NULL);
-    link li(&node1,&node2,2);
-    Node node3 = Node(7,NULL,NULL);
-    li.printList();
-    cout << "\n";
-    li.insert(&node3,0);
-    li.printList();
-    cout << "\n";
-    Node node4 = Node(9,NULL,NULL);
-    li.insert(&node4,3);
-    cout << "\n";
-    li.printList();
-    li.remove(1);
-    cout << "\n";
-    li.printList();
+    Node node1 = Node(1,NULL,NULL);
+    Node node2 = Node(2,NULL,NULL);
+    Node node3 = Node(3,NULL,NULL);
+    // Node node4 = Node(4,NULL,NULL);
+
+    // link hi;
+    // hi.insert(&node1,0);
+    // hi.insert(&node2,0);
+    // hi.insert(&node3,2);
+    // hi.insert(&node4,1);
+    // hi.printList();
+
+    // cout <<"\n";
+    // hi.remove(0);
+    // hi.printList();
+
+    // cout << "\n" << node4.getprev();
+    // Node node1 = Node(3,NULL,NULL);
+    // Node node2 = Node(5,NULL,NULL);
+    // link li(&node1,&node2,2);
+    // Node node3 = Node(7,NULL,NULL);
+    // li.printList();
+    // cout << "\n";
+    // li.insert(&node3,0);
+    // li.printList();
+    // cout << "\n";
+    // Node node4 = Node(9,NULL,NULL);
+    // li.insert(&node4,3);
+    // cout << "\n";
+    // li.printList();
+    // li.remove(1);
+    // cout << "\n";
+    // li.printList();
     
     link li2;
     li2.insert(&node1,0);
     cout << "\n";
     li2.printList();
     li2.insert(&node2,1);
+    li2.insert(&node3,2);
+    cout << "\n";
+    li2.printList();
+
+    li2.remove(-2);
     cout << "\n";
     li2.printList();
 }

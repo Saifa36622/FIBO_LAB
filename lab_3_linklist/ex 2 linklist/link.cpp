@@ -31,8 +31,15 @@ void link::insert(Node *newnode, int pos)
     }
     else if (pos == 0 && head == NULL)
     {
-        newnode->set_next(head);
         head = newnode;
+        tail = newnode;
+        newnode->set_next(NULL);
+    }
+    else if (pos == size)
+    {
+        tail->set_next(newnode);
+        newnode->set_next(NULL);
+        tail = newnode;
     }
     else
     {
@@ -117,35 +124,50 @@ void link::printList()
 }
 int main()
 {
-    Node node1 = Node(3,NULL);
-    Node node2 = Node(5,NULL);
-    link li(&node1,&node2,2);
-    Node node3 = Node(7,NULL);
-    cout << "1.should be 3 5 : \n\n";
-    li.printList();
-    cout << "\n";
-    li.insert(&node3,2);
-    cout << "2.should be 3 5 7: \n\n";
-    li.printList();
-    cout << "\n";
-    Node *x  = li.remove(1);
-    cout << "3.should be 5 : \n\n";
-    cout << x->getValue();
-    cout << "\n\n";
-    cout << "4.should be 3 7 : \n\n";
-    li.printList();
-    Node node4 = Node(9,NULL);
-    li.insert(&node4,2);
-    cout << "\n";
-    cout << "5.should be 3 7 9 : \n\n";
-    li.printList();
+    Node node1 = Node(1,NULL);
+    Node node2 = Node(2,NULL);
+    Node node3 = Node(3,NULL);
+    Node node4 = Node(4,NULL);
 
-    link test;
-    test.insert(&node1,0);
-    test.insert(&node2,1);
-    cout << "\n";
-    cout << "6.should be 3 5 : \n\n";
-    test.printList();
+    link hi;
+    hi.insert(&node1,0);
+    hi.insert(&node2,0);
+    hi.insert(&node3,2);
+    hi.insert(&node4,1);
+    hi.printList();
+
+    cout <<"\n";
+    hi.remove(3);
+    hi.printList();
+
+    cout << "\n" << node2.get_next();
+    // link li(&node1,&node2,2);
+    // Node node3 = Node(7,NULL);
+    // cout << "1.should be 3 5 : \n\n";
+    // li.printList();
+    // cout << "\n";
+    // li.insert(&node3,2);
+    // cout << "2.should be 3 5 7: \n\n";
+    // li.printList();
+    // cout << "\n";
+    // Node *x  = li.remove(1);
+    // cout << "3.should be 5 : \n\n";
+    // cout << x->getValue();
+    // cout << "\n\n";
+    // cout << "4.should be 3 7 : \n\n";
+    // li.printList();
+    // Node node4 = Node(9,NULL);
+    // li.insert(&node4,2);
+    // cout << "\n";
+    // cout << "5.should be 3 7 9 : \n\n";
+    // li.printList();
+
+    // link test;
+    // test.insert(&node1,0);
+    // test.insert(&node2,1);
+    // cout << "\n";
+    // cout << "6.should be 3 5 : \n\n";
+    // test.printList();
 }
 
 // trash
