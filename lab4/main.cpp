@@ -20,7 +20,7 @@ int main(){
     hi.name = "hi";
     hi.age = 30;
     hi.height = 200;
-    hi.setSubject("Pro");
+    hi.setSubject("ComPro");
     hi.showTeacherInfo();
     cout << "\n";
 
