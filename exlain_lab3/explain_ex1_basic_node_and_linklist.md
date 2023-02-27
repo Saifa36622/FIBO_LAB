@@ -137,5 +137,9 @@ function print
 
 ### ลืมอธิบาย Constuct (ขอโทษ)
 
+![code12131](https://media.discordapp.net/attachments/784804366904590388/1079835635776503880/image.png)
+
+
+
 
 
