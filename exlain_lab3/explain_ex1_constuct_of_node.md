@@ -49,3 +49,10 @@ constuct คือโค้ดในรูปนี้ โดย constuct อธ
 
 ![code123](https://media.discordapp.net/attachments/1029082389852475525/1080253718076866650/IMG_1771.png?width=906&height=437)
 
+- ### กล่อง n1
+
+![code12](https://media.discordapp.net/attachments/1029082389852475525/1080254428671655983/image.png)
+
+โดยกล่องนี้ถูกสร้างด้วยหลักการ หรือ constuct เดียวกับ Node zaa แต่ตอนที่เราระบุตัวแปร next นั้นเราไม่ได้ระบุ ให้มันเป็น Null แล้วแต่เราระบุให้มันเป็น ที่อยู่ หรือ address ของ node zaa แทน หมายความว่า ตอนนี้ node n1 ของเราจะทำการชี้ตัวต่อไป ไปที่ node zaa นั้นเอง ดังรูป
+
+![code123](https://media.discordapp.net/attachments/1029082389852475525/1080255021033197629/IMG_1772.png?width=960&height=279)
