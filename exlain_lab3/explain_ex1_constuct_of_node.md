@@ -27,3 +27,13 @@ constuct คือโค้ดในรูปนี้ โดย constuct อธ
 คือ การระบุว่ากล่อง wow นี้มีค่า value = 0 และ มีตัวแปร next ชี้ไปที่ Null ดังรูป
 
 ![code122](https://media.discordapp.net/attachments/1029082389852475525/1080249512972521612/IMG_1770.png?width=960&height=419)
+
+- กล่อง zaa หรือ node zaa
+
+![code12](https://media.discordapp.net/attachments/784804366904590388/1080250399132504085/image.png)
+
+เราได้สร้าง Node zaa ด้วยการเขียนดังภาพ สังเกตว่าเราได้มีการใส่ค่าเข้าไปในวงเล็บ หมายความว่า Node zaa จะถูกสร้างด้วย constucter นี้ 
+
+![code123122](https://media.discordapp.net/attachments/784804366904590388/1080250800179253268/image.png)
+
+โดยหลักการทำงานของ constucter ตัวนี้คือ รับค่า ตัวแปรเข้ามา 2 ตัวแปร คือ 1.ตัวแปรแรกตัวแปร int หรือ ตัวลข และ 2.ตัวแปรประเภท Node 
