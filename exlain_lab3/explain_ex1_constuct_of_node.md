@@ -28,6 +28,8 @@ constuct คือโค้ดในรูปนี้ โดย constuct อธ
 
 ![code122](https://media.discordapp.net/attachments/1029082389852475525/1080249512972521612/IMG_1770.png?width=960&height=419)
 
+(ทั้งสองรูปเหมือนกัน)
+
 - กล่อง zaa หรือ node zaa
 
 ![code12](https://media.discordapp.net/attachments/784804366904590388/1080250399132504085/image.png)
@@ -39,3 +41,10 @@ constuct คือโค้ดในรูปนี้ โดย constuct อธ
 โดยหลักการทำงานของ constucter ตัวนี้คือ รับค่า ตัวแปรเข้ามา 2 ตัวแปร คือ 1.ตัวแปรแรกตัวแปร int หรือ ตัวลข และ 2.ตัวแปรประเภท Node * เข้ามา ตามลำดับ จากนั้นนำค่าเหล่านั้นมาใส่ในค่าตัวแปร value และ next ของ กล่องนั้นๆ เช่น เราสังเกตว่า ตอนที่เราสร้าง node zaa เราได้เขียนว่า Node zaa = Node(5,NULL); หมายความว่าตอนที่เราสร้าง node zaa ได้ได้ให้ ค่า new value = 5 และ newnext = NULL จากนั้นเราก็ได้เอาค่าเหล่านั้นไปใส่ในค่า value และ next ของกล่องนั้นๆ ตรงนี้ 
 
 ![codepp](https://media.discordapp.net/attachments/784804366904590388/1080252981187985438/image.png)
+
+คือการ เอาค่า new value มาใส่นค่า value และ นำเอาค่า newnext มาใส่ที่ next 
+
+โดยกล่อง zaa จะหน้าตาประมาณนี้ 
+
+![code123](https://media.discordapp.net/attachments/1029082389852475525/1080253718076866650/IMG_1771.png?width=906&height=437)
+
