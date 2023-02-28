@@ -1,9 +1,11 @@
 อันนี้เป็นการอธิบาย lab 3 แบบคร่าวๆ คือ header fie ,node แลพ linked list โดยในส่วนเนื้อหา ex1 basic node อาจมีการข้ามไปบ้าง เนื่องจากเห็นว่าคนส่วนใหญ่ทำและ ส่ง ex1 ได้ ดังนั้นหากถ้าอ่านไม่เข้าใจ ก็ลองอ่านใหม่ดู หยอกๆ ถ้าอ่านแล้วไม่เข้าใจก็ลองทัก  
-ig : 
-     p_lingling_ (หลิงหลิง)
-     anawach_n (นาโน)
-     _iwannasea_ (เต้)
-Discord :
-    Memekhos (big)
+
+- ig : 
+     - p_lingling_ (หลิงหลิง)
+     - anawach_n (นาโน)
+     - _iwannasea_ (เต้)
+
+- Discord :
+    - Memekhos (big)
 
 ทักไปถามพวกมันนะ มันทำกันได้
