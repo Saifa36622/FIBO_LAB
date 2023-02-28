@@ -41,4 +41,7 @@ linked list คืออะไร เราอ้างอิงจากเน�
 
 ![hi](https://media.discordapp.net/attachments/1029082389852475525/1080268478084304986/image.png?width=698&height=437)
 
+1. void insert(Node *newnode,int pos);
+fuction ที่ใช้ insert ค่าเข้าไปที่ linked list 
+
 
