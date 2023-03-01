@@ -147,6 +147,9 @@ else if (pos == 0 && head == NULL)
 ![code](https://media.discordapp.net/attachments/1029082389852475525/1080285863382110218/IMG_1785.png?width=930&height=437)
 
 โดยหากนำหลักการมาเขียนโค้ดจะได้ดังนี้
+
+![code](https://media.discordapp.net/attachments/1029082389852475525/1080291289825824778/image.png)
+
 else if (pos == size) คือการดักกรณีที่ เป็นการเติมที่หาง
 จากนั้น ตามข้อ 
 - 1 คือเราต้องการให้ หาง หรือ tail ชี้ไปที่ newnode ด้วย tail->set_next(newnode); 
