@@ -118,5 +118,9 @@ head = newnode; นั้นเอง
 หากเติม pos ที่ 0 และ head == NULL หรือ link ว่างเปล่า
 จากนั้นที่บรรทัด head = newnode; และ tail = newnode; หมายความว่าได้ตั้ง newnode ของเราเป็น head และ tail และ จากนั้นจึง set ค่าตัวต่อไปที่ null ที่บรรทัด newnode->set_next(NULL);
 
+### เติมหาง
+
+
+
 
 
