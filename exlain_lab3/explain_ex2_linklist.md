@@ -114,10 +114,7 @@ head = newnode; นั้นเอง
 
 ![codedf](https://media.discordapp.net/attachments/1029082389852475525/1080281393633951905/image.png)
 
-โดยเราได้ดักกรณีไว้ว่า 
-
-![code](https://media.discordapp.net/attachments/1029082389852475525/1080291289825824778/image.png)
-
+โดยเราได้ดักกรณีไว้ว่า
 
 else if (pos == 0 && head == NULL)
 หากเติม pos ที่ 0 และ head == NULL หรือ link ว่างเปล่า
