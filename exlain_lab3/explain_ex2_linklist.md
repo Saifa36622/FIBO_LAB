@@ -114,7 +114,11 @@ head = newnode; นั้นเอง
 
 ![codedf](https://media.discordapp.net/attachments/1029082389852475525/1080281393633951905/image.png)
 
-โดยเราได้ดักกรณีไว้ว่า else if (pos == 0 && head == NULL)
+โดยเราได้ดักกรณีไว้ว่า 
+
+![code](https://media.discordapp.net/attachments/1029082389852475525/1080291289825824778/image.png)
+
+else if (pos == 0 && head == NULL)
 หากเติม pos ที่ 0 และ head == NULL หรือ link ว่างเปล่า
 จากนั้นที่บรรทัด head = newnode; และ tail = newnode; หมายความว่าได้ตั้ง newnode ของเราเป็น head และ tail และ จากนั้นจึง set ค่าตัวต่อไปที่ null ที่บรรทัด newnode->set_next(NULL);
 
@@ -148,7 +152,7 @@ else if (pos == size) คือการดักกรณีที่ เป็
 
 - และจากนั้น ตามข้อ 2 เราก็บอกให้ newnode ของเรา ชี้ไปที่ null เพื่อบอกให้รู้ว่า link นี้จบแล้ว ด้วย newnode->set_next(NULL);
 
-- และ ข้อที่ 3 บอกให้คอมรู้ว่า tail ได้เปลี่ยนตำแหน่งมายัง newnode ของเราแล้ว ด้วย tail = newnode; คือ ให้tail ไปอยู่ที่ newnonde นั้นเอง
+- และ ข้อที่ 3 บอกให้คอมรู้ว่า tail ได้เปลี่ยนตำแหน่งมายัง newnode ของเราแล้ว ด้วย tail = newnode; คือ ให้ tail ไปอยู่ที่ newnonde นั้นเอง
 
 
 
