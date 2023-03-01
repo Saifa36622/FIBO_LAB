@@ -133,7 +133,14 @@ head = newnode; นั้นเอง
 
 ![code](https://media.discordapp.net/attachments/1029082389852475525/1080285863063339058/IMG_1786.png?width=960&height=432)
 
-2. จากนั้นเราก็บอกให้
+2. จากนั้นเราก็บอกให้ newnode ของเรา ชี้ไปที่ null เพื่อบอกให้รู้ว่า link นี้จบ แล้ว
+
+![code](https://media.discordapp.net/attachments/1029082389852475525/1080285862409031770/IMG_1788.png?width=960&height=421)
+
+3. ขั้นตอนสุดท้ายคือการบอกให้คอมรู้ว่า tail ได้เปลี่ยนตำแหน่งมายัง newnode ของเราแล้ว
+
+![code](https://media.discordapp.net/attachments/1029082389852475525/1080285863382110218/IMG_1785.png?width=930&height=437)
+
 
 
 
