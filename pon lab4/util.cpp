@@ -39,4 +39,3 @@ void Node::setprev(Node *newprev)
 {
     prev = newprev;
 }
-

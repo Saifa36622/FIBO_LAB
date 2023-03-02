@@ -26,19 +26,38 @@ class Student: public Person{
         ~Student();
         void showStudenInfo();
 };
-
-
-class Teacher :public Person
-{
+class Teacher: public Person{
     private:
-        string subject;
+    string subject;
     public:
-       Teacher();
-       ~Teacher();
-       void setSubject(string subnew);
-       string getSubjec();
-       void showTeacherInfo();
+    Teacher();
+    ~Teacher();
+    string getSubject();
+    void setSubject(string subject);
+    void showTeacherInfo();
+
 
 };
+
+
+
+
+
+
+
+
+
+// class Teacher :public Person
+// {
+//     private:
+//         string subject;
+//     public:
+//        Teacher();
+//        ~Teacher();
+//        void setSubject(string subnew);
+//        string getSubjec();
+//        void showTeacherInfo();
+
+// };
 
 #endif

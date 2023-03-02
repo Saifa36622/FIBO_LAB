@@ -47,21 +47,17 @@ void Student::showStudenInfo(){
 Teacher::Teacher():Person(){
     string subject = "";
 }
+
 Teacher::~Teacher(){
 
 }
-
-void Teacher::setSubject(string subnew)
-{
-    subject = subnew;
+void Teacher::showTeacherInfo(){
+    showPersonInfo();
+    cout<<"subject:"<<subject<<endl;
 }
-
-string Teacher::getSubjec()
-{
+string Teacher::getSubject(){
     return subject;
 }
-void Teacher::showTeacherInfo()
-{
-    showPersonInfo();
-    cout << "Subject = " << subject<<endl;
+void Teacher::setSubject(string newsubject){
+    subject = newsubject;
 }
