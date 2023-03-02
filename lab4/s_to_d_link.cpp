@@ -72,7 +72,7 @@ Node *link::remove(int pos)
     {
         pos = size + pos;
     }
-    if (pos >= size )
+    if (pos > size )
     {
         cout << "Error" << endl;
         return NULL;
@@ -80,12 +80,17 @@ Node *link::remove(int pos)
     
     Node *removedNode = NULL;
     
-    if (pos == 0 && head != NULL)
+    if (pos == 0 && head != NULL && size != 1)
     {
         removedNode = head;
         head = head->get_next();
         head->setprev(NULL);
         removedNode->set_next(NULL);
+    }
+    else if (pos == 0 && size == 1)
+    {
+        removedNode = head;
+        head = NULL;
     }
     else if (pos == size - 1)
     {

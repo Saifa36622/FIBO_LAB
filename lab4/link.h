@@ -20,9 +20,6 @@ class Node
         void set_next(Node *new_next);
         Node *getprev();
         void setprev(Node *newprev);
-       
-
-        
 
 }; 
 class link
