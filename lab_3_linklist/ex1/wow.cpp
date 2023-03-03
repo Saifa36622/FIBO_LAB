@@ -35,7 +35,12 @@ int main()
     Node zaa = Node(5,NULL);
     Node n1 = Node(10,&zaa);
     
-    // wow.setValue(10);
+    cout << n1.get_next() << " and " << &zaa << endl;
+    cout << n1.get_next()->getValue() << endl;
+    int t = n1.get_next()->getValue();
+    cout << t;
+
+        // wow.setValue(10);
     // zaa.setValue(20);
     // int x = wow.getValue();
     // int y = zaa.getValue();
@@ -45,8 +50,6 @@ int main()
     // wow.set_next(&zaa);
     // Node temp = wow.get_next(); 
     // temp.print();
-
-    cout << n1.get_next() << " and " << &zaa;
 }
 
 
