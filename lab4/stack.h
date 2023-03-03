@@ -10,7 +10,7 @@ class stack: public link{
         ~stack();
         void push(Node *newN);
         int pop();
-        int peek();
+        Node *peek();
 };
 
 

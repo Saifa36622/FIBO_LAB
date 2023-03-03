@@ -10,7 +10,7 @@ class queue: public link{
         ~queue();
         void enqueue(Node *newN);
         int dequeue();
-        int peek();
+        Node *peek();
 };
 
 #endif
