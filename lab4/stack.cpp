@@ -57,7 +57,7 @@ int main(){
 
     // postlab
     int a[] = {1,2,3,0,4,5};
-    int size = sizeof(a)/4;
+    int size =sizeof(a)/4;
     stack hi;
     for (int i = 0;i < size;i++)
     {
