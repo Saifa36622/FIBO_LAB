@@ -10,12 +10,12 @@ int main(){
     saifa.showPersonInfo();
     cout << "\n";
 
-    Student got;
-    got.name = "got";
-    got.age = 20;
-    got.height = 180;
-    got.id = 101010;
-    got.grade = 4;
+    Student got("got",20,10,4,5);
+    // got.name = "got";
+    // got.age = 20;
+    // got.height = 180;
+    // got.id = 101010;
+    // got.grade = 4;
     got.showStudenInfo();
     cout << "\n";
 

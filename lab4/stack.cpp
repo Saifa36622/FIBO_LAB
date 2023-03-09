@@ -39,6 +39,7 @@ int main(){
     // hi.push(&node3);
     // hi.push(&node4);
 
+    // hi.printList();
     // cout <<"peek : " <<  hi.peek()->getValue() << endl;
 
     // cout <<"remove : "<< hi.pop() << endl;
@@ -56,7 +57,7 @@ int main(){
 
 
     // postlab
-    int a[] = {1,2,3,0,4,5};
+    int a[] = {0,2,3,0,4,5};
     int size =sizeof(a)/4;
     stack hi;
     for (int i = 0;i < size;i++)
