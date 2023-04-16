@@ -10,14 +10,14 @@ while(1):
     
     if (y == 0):
         x += 1
-        if (x > win_y):
+        if (x*2 > win_y):
             y = 1
     if (y ==1):
         x -= 1
         if (x <= 0):
             y = 0
     
-    pg.time.delay(1) #หน่วงเวลา
+    pg.time.delay(10) #หน่วงเวลา
     
     pg.display.update()
     for event in pg.event.get():

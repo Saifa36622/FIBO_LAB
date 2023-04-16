@@ -16,9 +16,9 @@ x = 0
 y = 0
 while(1):
 
-    screen.fill((255, 255, 255))
+    screen.fill((25, 25, 25))
     
-    pg.draw.circle(screen,(100,100,100),(posX+x,posY-y),20)
+    pg.draw.circle(screen,(1,100,100),(posX+x,posY-y),20)
     
     
     x = u * math.cos(math.radians(theta)) * t

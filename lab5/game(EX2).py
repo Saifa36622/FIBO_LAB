@@ -16,11 +16,14 @@ while(1):
     posY += (v*t) + (0.5*(acce)*(t*t))
     v = acce * t
 
+    # posY += y
+    # y += 1
+
     if (posY >= win_y):
         pg.quit()
         exit()
 
-    pg.time.delay(1) #หน่วงเวลา
+    pg.time.delay(10) #หน่วงเวลา
 
     pg.display.update()
     
