@@ -21,19 +21,19 @@ while(1):
     if check_d :
         print(d)
         d += 1
-        pg.time.delay(3)
+        pg.time.delay(1)
     if check_a :
         print(a)
         a += 1
-        pg.time.delay(3)
+        pg.time.delay(1)
     if check_w :
         print(w)
         w += 1
-        pg.time.delay(3)
+        pg.time.delay(1)
     if check_s :
         print(w)
         s += 1
-        pg.time.delay(3)
+        pg.time.delay(1)
 
 
     pg.display.update()
