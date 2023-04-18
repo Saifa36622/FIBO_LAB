@@ -151,57 +151,6 @@ class InputBoxage:
                 self.error_displayed = False
 
 
-# class InputBoxage:
-#     def __init__(self, x, y, w, h, text='',wow = ''):
-#         self.rect = pg.Rect(x, y, w, h)
-#         self.color = COLOR_INACTIVE
-#         self.text = text
-#         self.wow = wow
-#         self.txt_surface = FONT.render(text, True, self.color)
-#         self.active = False
-
-#     def handle_event(self, event):
-#         switchfor_age = 0
-#         if event.type == pg.MOUSEBUTTONDOWN:# ทำการเช็คว่ามีการคลิก Mouse หรือไม่
-#             if self.rect.collidepoint(event.pos): #ทำการเช็คว่าตำแหน่งของ Mouse อยู่บน InputBox นี้หรือไม่
-#                 # Toggle the active variable.
-#                 self.active = not self.active
-#             else:
-#                 self.active = False
-#             self.color = COLOR_ACTIVE if self.active else COLOR_INACTIVE # เปลี่ยนสีของ InputBox
-            
-#         if event.type == pg.KEYDOWN:
-#             if self.active:
-#                 if event.key == pg.K_RETURN:
-#                     # collect = ""
-#                     # collect += self.text
-#                     print(self.text)
-#                     self.wow = self.text
-#                     # print(collect)
-#                     self.text = ''
-#                     if not self.wow.isnumeric():
-#                         print("hi")
-#                         screen.blit(error, errorRect)
-#                         pg.time.delay(5000)
-#                 elif event.key == pg.K_BACKSPACE:
-#                     self.text = self.text[:-1]
-#                 else:
-#                     self.text += event.unicode
-#                 # Re-render the text.
-#                 self.txt_surface = FONT.render(self.text, True, self.color)
-#     def re_collect(self):
-#         return self.wow
-#     def update(self):
-#         # Resize the box if the text is too long.
-#         width = max(200, self.txt_surface.get_width()+10)
-#         self.rect.w = width
-
-#     def draw(self, Screen):
-#         # Blit the text.
-#         Screen.blit(self.txt_surface, (self.rect.x+5, self.rect.y+5))
-#         # Blit the rect.
-#         pg.draw.rect(Screen, self.color, self.rect, 2)
-
 input_box1 = InputBox(100, 100, 140, 32) # สร้าง InputBox1
 input_box2 = InputBox(100, 200, 140, 32) # สร้าง InputBox2
 input_boxage = InputBoxage(100, 300, 140, 32)
@@ -299,3 +248,54 @@ while (1):
 
     pg.time.delay(1)
     pg.display.update()
+
+    # class InputBoxage:
+#     def __init__(self, x, y, w, h, text='',wow = ''):
+#         self.rect = pg.Rect(x, y, w, h)
+#         self.color = COLOR_INACTIVE
+#         self.text = text
+#         self.wow = wow
+#         self.txt_surface = FONT.render(text, True, self.color)
+#         self.active = False
+
+#     def handle_event(self, event):
+#         switchfor_age = 0
+#         if event.type == pg.MOUSEBUTTONDOWN:# ทำการเช็คว่ามีการคลิก Mouse หรือไม่
+#             if self.rect.collidepoint(event.pos): #ทำการเช็คว่าตำแหน่งของ Mouse อยู่บน InputBox นี้หรือไม่
+#                 # Toggle the active variable.
+#                 self.active = not self.active
+#             else:
+#                 self.active = False
+#             self.color = COLOR_ACTIVE if self.active else COLOR_INACTIVE # เปลี่ยนสีของ InputBox
+            
+#         if event.type == pg.KEYDOWN:
+#             if self.active:
+#                 if event.key == pg.K_RETURN:
+#                     # collect = ""
+#                     # collect += self.text
+#                     print(self.text)
+#                     self.wow = self.text
+#                     # print(collect)
+#                     self.text = ''
+#                     if not self.wow.isnumeric():
+#                         print("hi")
+#                         screen.blit(error, errorRect)
+#                         pg.time.delay(5000)
+#                 elif event.key == pg.K_BACKSPACE:
+#                     self.text = self.text[:-1]
+#                 else:
+#                     self.text += event.unicode
+#                 # Re-render the text.
+#                 self.txt_surface = FONT.render(self.text, True, self.color)
+#     def re_collect(self):
+#         return self.wow
+#     def update(self):
+#         # Resize the box if the text is too long.
+#         width = max(200, self.txt_surface.get_width()+10)
+#         self.rect.w = width
+
+#     def draw(self, Screen):
+#         # Blit the text.
+#         Screen.blit(self.txt_surface, (self.rect.x+5, self.rect.y+5))
+#         # Blit the rect.
+#         pg.draw.rect(Screen, self.color, self.rect, 2)
