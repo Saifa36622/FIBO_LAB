@@ -19,7 +19,7 @@ class Button(Rectangle):
         Rectangle.__init__(self, x, y, w, h)
     
     def isMouseOn(self):
-        mouse_x, mouse_y = pg.mouse.get_pos()
+        mouse_x, mouse_y = pg.mouse.get_pos() #[100,200]
         if mouse_x >= self.x and mouse_x <= self.x + self.w and mouse_y >= self.y and mouse_y <= self.y + self.h:
             return True
         else:
@@ -39,7 +39,7 @@ btn = Button(20,20,100,100) # สร้าง Object จากคลาส Butto
 while(1):
     screen.fill((255, 255, 255))
     if btn.isMouseOn():
-        if btn.isclick():
+        if btn.isclick(): # can be replace by if pg.mouse.get_pressed()[0] :
             # btn.w = 100
             # btn.h = 100
             btn.R = 128
