@@ -2,7 +2,7 @@
 
 linklisted และ node คืออะไร 
 
-![code12](https://media.discordapp.net/attachments/784804366904590388/1074030131280097291/image.png?width=757&height=437)
+![code12](https://cdn.discordapp.com/attachments/784804366904590388/1074030131280097291/image.png?ex=65eca681&is=65da3181&hm=130220ec6df64de42d28f1da763cdd4df2bbf4ad0aa2677e5e92c87cea61968a&)
 
 ทั้งก้อนที่เชื่อมกันอยู่คือ linkisted ส่วนแต่ละบล็อค คือแต่ละ node พูดง่ายๆ คือ linklisted คือก้อนหรือเบล็อคข้อมูลที่เขื่อต่อกันอยู่ โดยมีก้อนหรือบล็อคสุดท้ายที่ชี้ไปที่ null เสมอ
 
@@ -10,12 +10,12 @@ linklisted และ node คืออะไร
 
  ตามปกติแล้วเราสามารถกำหนดให้ node ละ node มีข้อมูลอะไรก็ได้ แต่โดยทั่วไปจะมีอยู่ 2 ข้อมูลด้านใน คือ ข้อมูลในกล่อง และ สิ่งที่ node นั้นๆจะชี้ไป
 
- ![code](https://media.discordapp.net/attachments/784804366904590388/1074036745311633539/image.png?width=732&height=437)
+ ![code](https://cdn.discordapp.com/attachments/784804366904590388/1074036745311633539/image.png?ex=65ecacaa&is=65da37aa&hm=7614e39127d6d8df5fac26a5d4cf58daa9eceea4584bba696da53c5fb803200c&)
 
  โดยจากรูป 
  data = ข้อมูลที่อยู่ด้านใน และ next คือที่ที่ node นั้นๆจะชี้ไป โดย node สามารถชี้ไปที่ node อื่นๆ หรือ ชี้ไปที่ null ก็ได้ 
 
- ![code123](https://media.discordapp.net/attachments/784804366904590388/1074037908832526410/image.png?width=680&height=437)
+ ![code123](https://cdn.discordapp.com/attachments/784804366904590388/1074036745311633539/image.png?ex=65ecacaa&is=65da37aa&hm=7614e39127d6d8df5fac26a5d4cf58daa9eceea4584bba696da53c5fb803200c&)
 
 โดยหากเราอยากเขียน code เพื่อสร้าง node ขึ้นมา 1 กล่อง ก็คือการสร้าง class ขึ้นมานั้นเอง โดยจะให้ class ตัวนี้ชื่ออะไรก็ได้
 
