@@ -15,11 +15,11 @@ linklisted และ node คืออะไร
  โดยจากรูป 
  data = ข้อมูลที่อยู่ด้านใน และ next คือที่ที่ node นั้นๆจะชี้ไป โดย node สามารถชี้ไปที่ node อื่นๆ หรือ ชี้ไปที่ null ก็ได้ 
 
- ![code123](https://cdn.discordapp.com/attachments/784804366904590388/1074036745311633539/image.png?ex=65ecacaa&is=65da37aa&hm=7614e39127d6d8df5fac26a5d4cf58daa9eceea4584bba696da53c5fb803200c&)
+ ![code123](https://cdn.discordapp.com/attachments/784804366904590388/1074037908832526410/image.png?ex=65ecadc0&is=65da38c0&hm=64466bb28c4e1f564a10bd34516bf363351d67c8fccff461f357b30eec709f01&)
 
 โดยหากเราอยากเขียน code เพื่อสร้าง node ขึ้นมา 1 กล่อง ก็คือการสร้าง class ขึ้นมานั้นเอง โดยจะให้ class ตัวนี้ชื่ออะไรก็ได้
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074038486585323530/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074038486585323530/image.png?ex=65ecae49&is=65da3949&hm=8572c0496958384154915ca8b126d0e29888d0620ad445962d7ba8d9c85478dc&)
 
 ดังรูป เรามี class หรือ กล่องข้อมูลสำหรับใส่ข้อมูล โดยด้านในให้เก็บข้อมูลไว้ 2 อย่างคือ 1. value หรือ ข้อมูลภายในกล่อง โดยจาก code นี้ได้เก็บข้อมูลในรูปแบบตัวเลขจำนวนเต็ม หรือ int และ 2.next หรือ ที่ที่ต้องการให้กล่องนี้ชี้ไป (รูปด้านบนเป็นการสร้าง class ที่ file .h)
 
