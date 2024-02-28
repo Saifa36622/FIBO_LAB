@@ -27,11 +27,11 @@ linklisted และ node คืออะไร
 
 หมายถึงขณะที่เราสร้าง node ตัวนี้เราอยากให้ node หรือ กล่องตัวนี้มีข้อมูลเป็นอย่างไรบ้าง โดยเราต้องเพิ่ม constuct เข้าไปที่ class ของเราก่อน ดังรูป (โดย ta สั้งไว้ว่า ให้ประกาศเป็นแบบ private และ เหตุผลที่เราต้องมานั้งลำบากสร้าง function กันก็เพราะเป็น private นี่แหละ)
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074040315129901226/image.png?ex=65ecaffd&is=65da3afd&hm=062199e8fc5eac8a5779fd3b990311a8c54cd58368205d1a15d12e2b69b04437&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074039967002673183/image.png?ex=65ecafaa&is=65da3aaa&hm=2662093b7396414b529867dbd692e2e758d5ee30780c9b9be4d0162f2549242b&)
 
 (code ต่อไปนี้อยู่ที่ file .cpp อีกอัน) จากนั้นเราก็จะมาระบุว่าขณะที่เราสร้าง node ตัวนี้เราต้องการค่าอะไรบ้าง
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074039967002673183/image.png?ex=65ecafaa&is=65da3aaa&hm=2662093b7396414b529867dbd692e2e758d5ee30780c9b9be4d0162f2549242b&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074040315129901226/image.png?ex=65ecaffd&is=65da3afd&hm=062199e8fc5eac8a5779fd3b990311a8c54cd58368205d1a15d12e2b69b04437&)
 
 (เดี่ยวแนบรูปตอนสร้างไว้ให้ด้านล่าง)
 
