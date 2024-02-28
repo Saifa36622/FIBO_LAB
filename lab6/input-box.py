@@ -1,7 +1,7 @@
 import sys
 import pygame as pg
-
 pg.init()
+
 win_x, win_y = 800, 480
 screen = pg.display.set_mode((win_x, win_y))
 
@@ -15,8 +15,6 @@ font = pg.font.Font('freesansbold.ttf', 32)
 first = font.render('Firstname', True, (0,0,0))
 firstRect = first.get_rect()
 firstRect.center = (120,80)
-
-
 
 last = font.render('lastname', True, (0,0,0))
 lastRect = last.get_rect()

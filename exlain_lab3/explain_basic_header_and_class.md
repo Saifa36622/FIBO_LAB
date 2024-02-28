@@ -9,11 +9,11 @@
 
  คือ การสร้าง file ที่มีนาสกุล .h (ย่อมาจาก header) โดย file .h ตัว โดยต้องนำไปใช้คู่กับโค้ดที่เราต้องการ (เช่น file .cpp ที่เราต้องการ ) โดยหลักการคล้ายกับ การนำโค้ดที่อยู่ใน header file ไปแปะไว้ด้านบนของ file ที่เราต้องการ เช่น 
 
- ![code](https://media.discordapp.net/attachments/784804366904590388/1073928128910598154/image.png)
+ ![code](https://cdn.discordapp.com/attachments/784804366904590388/1073928128910598154/image.png?ex=65ec4782&is=65d9d282&hm=05acc26f72138ca7e132adf42e4490f872b6d66cea37e08a0080b992399a76d1&)
 
  จากรูปนี่คือโค้ดปกติที่มีการ include iostream และ using namespace std เอาไว้ โดยเราสามารถสร้าง header file ทำให้ไม่ต้องพิมทั้ง 2 ประโยคนี้ได้ โดยการ
 
- ![code2](https://media.discordapp.net/attachments/784804366904590388/1073929895996051467/image.png)
+ ![code2](https://cdn.discordapp.com/attachments/784804366904590388/1073929895996051467/image.png?ex=65ec4927&is=65d9d427&hm=63d4689e3951d1b2fb8a8727b7f28b82e61ccb1539f89eaf58f9847e351ec7a1&)
 
  สร้าง file .h ขึ้นมา 1 file โดยต้องให้ file นี้อยู่ใน folder เดียวกับ file .cpp ที่เราต้องการ
 

@@ -3,6 +3,7 @@
 
 #include <iostream>
 using namespace std;
+
 class Node
 {
 	private:
@@ -32,5 +33,6 @@ class link
         Node *remove(int pos);
         
 };
+
 
 #endif

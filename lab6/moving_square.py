@@ -5,6 +5,7 @@ pg.init()
 win_x = 800
 win_y = 400
 screen = pg.display.set_mode((win_x, win_y))
+
 check_d = False
 check_a = False
 check_w = False
@@ -19,19 +20,19 @@ while(1):
     screen.fill((255, 255, 255))
     pg.draw.rect(screen,(100,100,100),(posX+d-a,posY-w+s,100,100))
     if check_d :
-        print(d)
+        # print(d)
         d += 1
         pg.time.delay(1)
     if check_a :
-        print(a)
+        # print(a)
         a += 1
         pg.time.delay(1)
     if check_w :
-        print(w)
+        # print(w)
         w += 1
         pg.time.delay(1)
     if check_s :
-        print(w)
+        # print(w)
         s += 1
         pg.time.delay(1)
 
@@ -40,6 +41,7 @@ while(1):
     for event in pg.event.get():
         if event.type == pg.QUIT:
             pg.quit()
+    
         if event.type == pg.KEYDOWN and event.key == pg.K_d: #ปุ่มถูกกดลงและเป็นปุ่ม D
             check_d = True
             print("Key D down")
