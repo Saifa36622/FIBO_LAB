@@ -32,7 +32,7 @@
 เช่น
 
 
-![code3](https://media.discordapp.net/attachments/784804366904590388/1073933763664425060/image.png)
+![code3](https://cdn.discordapp.com/attachments/784804366904590388/1073933050783744100/image.png?ex=65ec4c18&is=65d9d718&hm=1121f74d9d49ec1650c42bff982baa1abe85bfb8c8260b9cf2bbb0c094191a16&)
 
 
 
@@ -59,15 +59,15 @@
 
 โดยเมื่อเขียนเรียบร้อยหน้าตาจะประมาณนี้
 
-![code20](https://media.discordapp.net/attachments/784804366904590388/1073933990274273290/image.png)
+![code20](https://cdn.discordapp.com/attachments/784804366904590388/1073933763664425060/image.png?ex=65ec4cc1&is=65d9d7c1&hm=27252b42c81dfdd72143e33274e132e537faac67246b805d455bb83c4ffa0854&)
 
 โดย เมื่อเราสร้าง file .h เรียบร้อยแล้ว เราก็จะสามารถ include หรือ ทำให้ file ที่เราต้องการเขียนรู้จัก file .h ที่เราเขียนได้โดยการ เขียน include "ชื่อ file .h ของเรา" กำกับเอาไว้ ดังรูป
 
-![code65](https://media.discordapp.net/attachments/784804366904590388/1073935347844661248/image.png)
+![code65](https://cdn.discordapp.com/attachments/784804366904590388/1073933990274273290/image.png?ex=65ec4cf8&is=65d9d7f8&hm=bb8386334ff1560970288b28306475a125442d2c5934245f57c695a8bb1e607c&)
 
 โดยเราสามารถนำมาพลิกแพลงได้ เช่น สร้าง function ใน file .h และนำมาเรียกใช้งานที่ file ที่เราต้องการ ยกตัวอย่างเช่น 
 
-![code200](https://media.discordapp.net/attachments/784804366904590388/1073934615154278431/image.png)
+![code200](https://cdn.discordapp.com/attachments/784804366904590388/1073934615154278431/image.png?ex=65ec4d8c&is=65d9d88c&hm=bf7017b870475ac7e79ac395888a66ff681a1b1b25d8666bacc5db84bad88520&)
 
 จากรูปภาพ จะสังเกตได้ว่า code ทางซ้าย หรือ hi.h ได้มีการ สร้าง function ชื่อว่า yoloo และหากเรา include "hi.h"
 เข้าไปที่ file .cpp ทางด้านขวา เราก็จะสามารถเรียกใช้ function ที่มีชื่อว่า yoloo ได้
@@ -76,17 +76,17 @@
 
 class เปรียบเสมือนถ้าเราจะสร้าง template ตัวละคร โดยสามารถสร้าง class ไว้ที่ file .h หรือ .cpp ก็ได้ เช่น 
 
-![codewowzaa](https://media.discordapp.net/attachments/784804366904590388/1073978746664656936/image.png)
+![codewowzaa](https://cdn.discordapp.com/attachments/784804366904590388/1073978280132231218/image.png?ex=65ec7637&is=65da0137&hm=bb6b5244fca25fffcfa1b4274ef731fbfe72474e14707a02e9b16dbb97ced9d5&)
 
 จากในรูปนี้เราได้ทำการสร้าง class ที่ชื่อว่า person ขึ้นมา และ ประกาศให้ใน person มีค่าตัวเลข attack และ heatlh โดยประกาศไว้แบบ public (เรื่อง public private เดี่ยวค่อยอธิบาย) 
 
 โดยเราสามารถ นำเอา class person นี้ไปสร้างตัวละครและตั้งชื่อให้กับตัวละครนั้นๆได้ เช่น 
 
-![code4545](https://media.discordapp.net/attachments/784804366904590388/1073979528755564574/image.png)
+![code4545](https://cdn.discordapp.com/attachments/784804366904590388/1073978746664656936/image.png?ex=65ec76a6&is=65da01a6&hm=ea8bd51456812893232ed3f7ede6bc3eb48e1db3da53cd864b21eb104c4ccf51&)
 
 จากรูปจะเสมือนว่าเราได้สร้างตัวละคร ชื่อว่า chokun โดยใน ตัวละคร chokun จะยังตัวแปร attack และ health อยู่ด้านใน โดยเราสามารถ assign หรือ ระบุ,ให้ค่าตัวแปรเหล่านั้นได้ผ่านวิธีนี้
 
-![code656566](https://media.discordapp.net/attachments/784804366904590388/1073986771337089034/image.png)
+![code656566](https://cdn.discordapp.com/attachments/784804366904590388/1073979528755564574/image.png?ex=65ec7761&is=65da0261&hm=709f991f34a8f055cefc64a8769ed0535d19656900ea42f873d7c745f3013125&)
 
 จากรูปเรากำลังระบุว่า ให้ค่า attack ของ chokun = 10 และ ค่า heatlh = 100 และ ให้ค่า speak ของ chokun = hi โดยหลักการของการเพิ่ม เปรียบเสมือนกับเราพิม  chokun ตามด้วย . เพื่อเข้าถึงตัวแปรที่มีใน person chokun
 
