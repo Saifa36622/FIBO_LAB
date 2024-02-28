@@ -50,18 +50,18 @@ linklisted และ node คืออะไร
 โดยสังเกตว่าในบรรทัดแรกได้มีการประกาศให้กล่องใบแรกมีชื่อว่ากล่อง wow แต่เราไม่ได้ระบุอะไรเข้าไปทำให้ในตอนนี้กล่องที่มีชื่อว่า wow นั้น เป็นกล่องเปล่าที่มีค่า 0 และ ชี้ไปที่ NULL ตามที่ใส่ไว้ที่ constuct อันแรก
 แต่กล่องที่ 2 ที่ชื่อว่า zaa นั้นเราได้ระบุค่าเอาไว้ โดยให้ค่าในกล่อง = 5 และ ชื้ไปที่ NULL ดังรูป
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074044392257618050/image.png?width=626&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074044392257618050/image.png?ex=65ecb3c9&is=65da3ec9&hm=0f2251363a10eac185e3f7277c7ffc9b60023733ad9ba1bed9f4484ba7e20ab0&)
 
 ### การสร้าง function get และ set 
 
  เพื่อเข้าไปปรับหรือแก้ไขข้อมูลที่เป็นข้อมูลแบบ private ใน class หรือ node นั้นๆ (อ้างอิงจาก basic_header_and_class)
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074045833055580360/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074045833055580360/image.png?ex=65ecb521&is=65da4021&hm=02787bd06e382bd59df2c9228cf6127c82c7b32784a37f3b6421f3e3f456882c&)
  
  โดยเราก็สร้าง function ที่สามารถเข้าไปปรับเปลี่ยนหรือดึงค่าจากใน class เหมือนเดิม
  โดยสิ่งที่ต้องเพิ่มเติมคือ เนื่องจาก ในnode หรือ ใน class ของเราไม่ได้มีตัวแปรแแค่ 1 ตัว แต่ยังมรตัวแปร next(ตัวแปรที่ใช้บอกว่า กล่องนี้ชี้ไปที่ไหน) อีก เราจึงต้องสร้าง function สำหรับ เปลี่ยนค่าหรือรับค่า ตัวแปร next โดยอ้างอิงหลักการเดียวกับการ เปลี่ยนหรือรับค่า value เพียงแต่เปลี่ยนเป็นตัวแปร next  
 
- ![code](https://media.discordapp.net/attachments/784804366904590388/1074046951475126373/image.png)
+ ![code](https://cdn.discordapp.com/attachments/784804366904590388/1074046951475126373/image.png?ex=65ecb62c&is=65da412c&hm=655f3627569ceec5fa77a9052053493e9ca1b06c3c7c345168db2f64866f9a21&)
 
  โดยที่ function get_next เราจะ return ค่าเป็น node เราจึงประกาศว่า hi hi::get_next 
 
@@ -69,43 +69,43 @@ linklisted และ node คืออะไร
 
  wowzaa.h
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074047612191260783/image.png?width=344&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074047612191260783/image.png?ex=65ecb6c9&is=65da41c9&hm=a4c8a38f2f1d46ff42da6036a98377fe1cefd5556219db41fb05d6d61f6ebd43&)
 
 hi.cpp
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074047836552970290/image.png?width=348&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074047836552970290/image.png?ex=65ecb6ff&is=65da41ff&hm=5c4981b5a8b3b51a83a788ca4ba7eeca29cc1080dbe88980abf2d5ffe546c9e4&)
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074047882061152376/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074047882061152376/image.png?ex=65ecb709&is=65da4209&hm=9678254dea162ebc867d9b65c2a515a77d94ef8cdbfb7fe7e1ee0a2ed3c1b1bf&)
 
 โดยในส่วนต่อไปจะเป็นการสั่งใช้งาน หรือ main
 
 หน้าตาของ code main โดยรวม
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074048361553997895/image.png?width=712&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074048361553997895/image.png?ex=65ecb77c&is=65da427c&hm=898977cecbc8638f950a29aeb5dbc13e34fdc55979c301ff12262b2c5822a58f&)
 
 โดย 2 บรรทัดแรกเป็นเสมือนการสร้างกล่องขึ้นมา 2 ใบ ชื่อว่า wow และ zaa ตามที่เคยได้อธิบายไปดังรูป
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074044392257618050/image.png?width=626&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074048768195960977/image.png?ex=65ecb7dd&is=65da42dd&hm=4df8fb89d74db1ee9a524b77fe3a4f7fc8bedc43e4eddcefc847479ff5d8632d&)
 
 จากนั้น อีก 2 บรรทัดต่อมา คือ 
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074048768195960977/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074049208547561572/image.png?ex=65ecb846&is=65da4346&hm=8fd3cdcf1608b0028544648020ef5d323cc76d9743be6f5dc6ca6a1684105611&)
 
 หมายความว่าเราได้ set ค่ากล่อง wow และ กล่อง zaa ใหม่ ดังรูป
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074049208547561572/image.png?width=618&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074049208547561572/image.png?ex=65ecb846&is=65da4346&hm=8fd3cdcf1608b0028544648020ef5d323cc76d9743be6f5dc6ca6a1684105611&)
 
 จากนั้นเราก็ได้ทำการ getvalue หรือ ดีงค่าของ wowมาเก็บที่ตัวแปร x และ ค่าของ zaa มาเก็บไว้ที่ตัวแแปร y
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074049580620070912/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074049580620070912/image.png?ex=65ecb89e&is=65da439e&hm=8c6e9b3ed8db95d58e03de2cff4cb3726f8aa85a7a3d630c8e7cbd46d04c1a67&)
 
 และ บรรทัดนี้คือ การ print ค่า x และ y ออกมา ดังภาพ
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074049897159991306/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074049897159991306/image.png?ex=65ecb8ea&is=65da43ea&hm=c1c1c0fa372baaae05b635e510d58ec7fc7581707e1108b1b0e823b297779ee1&)
 
 the output:
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074049937223995544/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074049937223995544/image.png?ex=65ecb8f3&is=65da43f3&hm=a3a9299fcdc801d22513b19b551b754bcdb34d1f6b226e95dc993c8757a3431c&)
 
 โดยต่อมา บรรทัดนี้
 
