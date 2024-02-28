@@ -27,11 +27,11 @@ linklisted และ node คืออะไร
 
 หมายถึงขณะที่เราสร้าง node ตัวนี้เราอยากให้ node หรือ กล่องตัวนี้มีข้อมูลเป็นอย่างไรบ้าง โดยเราต้องเพิ่ม constuct เข้าไปที่ class ของเราก่อน ดังรูป (โดย ta สั้งไว้ว่า ให้ประกาศเป็นแบบ private และ เหตุผลที่เราต้องมานั้งลำบากสร้าง function กันก็เพราะเป็น private นี่แหละ)
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074039967002673183/image.png?ex=65ecafaa&is=65da3aaa&hm=2662093b7396414b529867dbd692e2e758d5ee30780c9b9be4d0162f2549242b&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074040315129901226/image.png?ex=65ecaffd&is=65da3afd&hm=062199e8fc5eac8a5779fd3b990311a8c54cd58368205d1a15d12e2b69b04437&)
 
 (code ต่อไปนี้อยู่ที่ file .cpp อีกอัน) จากนั้นเราก็จะมาระบุว่าขณะที่เราสร้าง node ตัวนี้เราต้องการค่าอะไรบ้าง
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074040315129901226/image.png?ex=65ecaffd&is=65da3afd&hm=062199e8fc5eac8a5779fd3b990311a8c54cd58368205d1a15d12e2b69b04437&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074039967002673183/image.png?ex=65ecafaa&is=65da3aaa&hm=2662093b7396414b529867dbd692e2e758d5ee30780c9b9be4d0162f2549242b&)
 
 (เดี่ยวแนบรูปตอนสร้างไว้ให้ด้านล่าง)
 
@@ -41,11 +41,11 @@ linklisted และ node คืออะไร
 
 โดยหลักการของการสร้าง node ก็เหมือนกับหลักการการสร้างตัวแปรทั่วไป เช่น 
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074041979924652152/image.png?ex=65ecb18a&is=65da3c8a&hm=6f6b70ccb2e1b773091a0a688de850c9235e28d056c94d8a447c0610ef26a920&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074043164022812712/image.png?ex=65ecb2a5&is=65da3da5&hm=11d25e47824cdfd6288841cfc5568ecd0425671ee4db9e03a6c8b63b6dac888e&)
 
 หน้าตาของ code จริงๆ 
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074041979924652152/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074041979924652152/image.png?ex=65ecb18a&is=65da3c8a&hm=6f6b70ccb2e1b773091a0a688de850c9235e28d056c94d8a447c0610ef26a920&)
 
 โดยสังเกตว่าในบรรทัดแรกได้มีการประกาศให้กล่องใบแรกมีชื่อว่ากล่อง wow แต่เราไม่ได้ระบุอะไรเข้าไปทำให้ในตอนนี้กล่องที่มีชื่อว่า wow นั้น เป็นกล่องเปล่าที่มีค่า 0 และ ชี้ไปที่ NULL ตามที่ใส่ไว้ที่ constuct อันแรก
 แต่กล่องที่ 2 ที่ชื่อว่า zaa นั้นเราได้ระบุค่าเอาไว้ โดยให้ค่าในกล่อง = 5 และ ชื้ไปที่ NULL ดังรูป
