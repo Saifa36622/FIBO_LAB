@@ -192,32 +192,32 @@ the output:
 
 คือ การที่เราเอา function เหล่านั้นมาประกาศว่าให้มันทำอะไรนอก class นั้นๆ แต่ยังต้องมีการประกาศเอาไว้ว่าใน class นั้นๆ มี function นั้นๆ อยู่ ดังนี้
 
- ![code](https://media.discordapp.net/attachments/784804366904590388/1074001843505598634/image.png?width=960&height=406)
+ ![code](https://cdn.discordapp.com/attachments/784804366904590388/1074001843505598634/image.png?ex=65ec8c29&is=65da1729&hm=ebcffe535e9f2d9e9f2e14a7b1785056f86e8103112dade4c55aa03bab4aab34&)
 
  โดยเริ่มจากรูปทางด้านขวา
 
- ![code](https://media.discordapp.net/attachments/784804366904590388/1074002102365462548/image.png?width=406&height=437)
+ ![code](https://cdn.discordapp.com/attachments/784804366904590388/1074001986430718062/image.png?ex=65ec8c4b&is=65da174b&hm=d0c19fd7b4da032856b934e7979b0d281e76cb45ea87e8d86803c5d19930b048&)
 
  โดยเรามี class person ที่เราบอกให้คอมพิวเตอร์รู้ว่า มี function ที่ชื่อว่า set_attack อยู่ใน class นี้แต่ยังไม่บอกว่า function นี้ทำอะไร
 
 โดยเรามาบอกที่ file .cpp ทางด้านซ้ายตามรูปนี้
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074002620957601802/image.png?width=567&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074002102365462548/image.png?ex=65ec8c67&is=65da1767&hm=0cc99008f371c3061f4a6469d7fa8f5cd746622970882e33a49c9610b3197163&)
 
 เราบอกคอมพิวเตอร์ว่าให้ไปหา function ที่ชื่อว่า set_attack ที่อยู่ใน class person และ บอกว่า ให้ function นั้นๆทำอะไร
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074003445717147728/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074002620957601802/image.png?ex=65ec8ce2&is=65da17e2&hm=5af869f1e49fc1994bcbc22f7d17f7cdc4fa67961c92a85b08e05ced38625be7&)
 
 (ประโยคที่ เขียนว่า person::set_attack หมายความว่า ไปหา
 function ที่ชื่อว่า set_attack ที่อยู่ใน class person ที่เราเขียนเอาไว้)
 
 โดยเมื่อเสร็จแล้วจะหน้าตาประมาณนี้
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074007195328467014/image.png?width=960&height=372)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074007195328467014/image.png?ex=65ec9125&is=65da1c25&hm=8f67dab16f6a260c3b3b5d12bf21c01d13ec503daef6e2fc5b0928b9a61d682c&)
 
 ซึ้งทำงานได้ไม่ต่างกับ code นี้
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074007533779423312/image.png?width=926&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074007533779423312/image.png?ex=65ec9176&is=65da1c76&hm=28685b1939442cf6e4a497e55f0e23ec2d0ad8855467d916c353e248d8702f42&)
 
 
 
