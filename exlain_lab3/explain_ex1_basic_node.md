@@ -85,11 +85,11 @@ hi.cpp
 
 โดย 2 บรรทัดแรกเป็นเสมือนการสร้างกล่องขึ้นมา 2 ใบ ชื่อว่า wow และ zaa ตามที่เคยได้อธิบายไปดังรูป
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074048768195960977/image.png?ex=65ecb7dd&is=65da42dd&hm=4df8fb89d74db1ee9a524b77fe3a4f7fc8bedc43e4eddcefc847479ff5d8632d&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074044392257618050/image.png?ex=65ecb3c9&is=65da3ec9&hm=0f2251363a10eac185e3f7277c7ffc9b60023733ad9ba1bed9f4484ba7e20ab0&)
 
 จากนั้น อีก 2 บรรทัดต่อมา คือ 
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074049208547561572/image.png?ex=65ecb846&is=65da4346&hm=8fd3cdcf1608b0028544648020ef5d323cc76d9743be6f5dc6ca6a1684105611&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074049580620070912/image.png?ex=65ecb89e&is=65da439e&hm=8c6e9b3ed8db95d58e03de2cff4cb3726f8aa85a7a3d630c8e7cbd46d04c1a67&)
 
 หมายความว่าเราได้ set ค่ากล่อง wow และ กล่อง zaa ใหม่ ดังรูป
 
@@ -109,31 +109,31 @@ the output:
 
 โดยต่อมา บรรทัดนี้
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074050591627681812/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074050591627681812/image.png?ex=65ecb98f&is=65da448f&hm=eec0cc04f240b28694d2c49c8ca397f2d3a945672241d65bcb7207ef6471c5b5&)
 
 เป็นการบ่งบอกว่า ให้กล่อง wow นั้นชี้ไปที่ที่อยู่ของกล่อง zaa หรือ ชี้ไปที่กล่อง zaa นั้นเอง
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074050977319096411/image.png?width=571&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074050977319096411/image.png?ex=65ecb9eb&is=65da44eb&hm=0eece6a197f3f6dd652c68855a06f3904a70cfaa60734f01b92b18dfd5157d17&)
 
 และจากนั้นคือ การพิสูจน์ว่า function ของเรานั้นใช้ได้ไหมโดยการสร้างกล่องอีกใบมาเก็บข้อมูล ของกล่องที่อยู่ต่อจาก กล่อง wowเอาไว้ 
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074051450981843144/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074051450981843144/image.png?ex=65ecba5c&is=65da455c&hm=f1e07b4a1f28adfd34dfc83a76526ad07a42f8801405dda0060912bfa6c7502c&)
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074051760739581972/image.png?width=677&height=437)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074051760739581972/image.png?ex=65ecbaa6&is=65da45a6&hm=253efbf865e9efae677fa7ddba616db7d0a844ef8d65089c8cb4daa49a008e41&)
 
 จากนั้น(ลืมอธิบาย function print)
 
 function print 
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074052031817453680/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074052031817453680/image.png?ex=65ecbae7&is=65da45e7&hm=369ea8c02211a6ebc3c8341ffc58b848a943eac80f7de09d200b1cb75d89bb62&)
 
 คือ การprint เอาค่า value ใน node นั้นๆ ออกมา
 
 จากนั้น เราจึงสั่ง print temp ออกมา 
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074052420033859725/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074052420033859725/image.png?ex=65ecbb43&is=65da4643&hm=6452773a9ca73df65787580b740fc498b586a56d2e708140ebbee639cd3d1f66&)
 
-![code](https://media.discordapp.net/attachments/784804366904590388/1074052553723088896/image.png)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074052553723088896/image.png?ex=65ecbb63&is=65da4663&hm=16e9790775f230733ff61d559bd872b715291967caa5a7a805fc3a3e213206fd&)
 
 
 
