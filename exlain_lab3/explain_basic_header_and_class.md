@@ -202,11 +202,11 @@ the output:
 
 โดยเรามาบอกที่ file .cpp ทางด้านซ้ายตามรูปนี้
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074002102365462548/image.png?ex=65ec8c67&is=65da1767&hm=0cc99008f371c3061f4a6469d7fa8f5cd746622970882e33a49c9610b3197163&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074002620957601802/image.png?ex=65ec8ce2&is=65da17e2&hm=5af869f1e49fc1994bcbc22f7d17f7cdc4fa67961c92a85b08e05ced38625be7&)
 
 เราบอกคอมพิวเตอร์ว่าให้ไปหา function ที่ชื่อว่า set_attack ที่อยู่ใน class person และ บอกว่า ให้ function นั้นๆทำอะไร
 
-![code](https://cdn.discordapp.com/attachments/784804366904590388/1074002620957601802/image.png?ex=65ec8ce2&is=65da17e2&hm=5af869f1e49fc1994bcbc22f7d17f7cdc4fa67961c92a85b08e05ced38625be7&)
+![code](https://cdn.discordapp.com/attachments/784804366904590388/1074003445717147728/image.png?ex=65ec8da7&is=65da18a7&hm=43969d4605d0aeb89b077500248d0e9c1e69dd9b538bace5266b9e179a5dffb3&)
 
 (ประโยคที่ เขียนว่า person::set_attack หมายความว่า ไปหา
 function ที่ชื่อว่า set_attack ที่อยู่ใน class person ที่เราเขียนเอาไว้)
